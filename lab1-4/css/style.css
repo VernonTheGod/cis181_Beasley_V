@@ -33,6 +33,9 @@ h2 {
 }
 
 img {
+    margin: 20px 0;
+
+    border: 2px solid #0097A7;
     max-width: 380px;
     height: auto;
 }
