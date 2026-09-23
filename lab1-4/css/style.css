@@ -1,4 +1,38 @@
 /* ==========================================
    Applied Lab 1-4: CSS Foundations — Start Here
    ========================================== */
+body {
+    background-color: #FCFCFC;
+}
+body {
+    color: #4A4A4A;
+}
+;
+body {
+    font-size: 15px;
+    font-family: Verdana, Arial, sans-serif;
+}
 
+body {
+    line-height: 40px;
+}
+h1, h2, new3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+h1 {
+    font-size: 52px;
+    color: #1A1A1A;
+    letter-spacing: 2px;
+}
+h1 {
+    text-shadow: 1px 1px 2px #d5d5d5;
+}
+h2 {
+    font-size: 28px;
+    color: #0097A7;
+}
+
+img {
+    max-width: 380px;
+    height: auto;
+}
