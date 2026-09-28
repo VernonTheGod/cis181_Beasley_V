@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Best Chicken in Chicago</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Best Chicken <span>in Chicago</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="harolds.html">Harold's</a>
+      <a href="uncle-remus.html">Uncle Remus</a>
+      <a href="sharks.html">Shark's</a>
+      <a href="compare.html">Compare</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="kicker">Corrections and favorite orders</p>
+    <h1 class="page-title">Contact</h1>
+    <p class="lead">This form does not store your message. If the fields check out, your email app opens with the note ready to send. Nothing is saved in a database.</p>
+
+    <form id="contact-form">
+      <p>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name">
+      </p>
+      <p>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email">
+      </p>
+      <p>
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+      </p>
+      <p id="contact-error" class="error" role="alert"></p>
+      <button class="button" type="submit">Prepare email</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>Best Chicken in Chicago. Informational site by Vernon Beasley, CIS 181.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compare | Best Chicken in Chicago</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Best Chicken <span>in Chicago</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="harolds.html">Harold's</a>
+      <a href="uncle-remus.html">Uncle Remus</a>
+      <a href="sharks.html">Shark's</a>
+      <a class="active" href="compare.html">Compare</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="kicker">Side by side</p>
+    <h1 class="page-title">Compare the three</h1>
+    <p class="lead">"Best" is an argument. This table shows how the three spots differ. It does not take an order.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Question</th>
+          <th>Harold's</th>
+          <th>Uncle Remus</th>
+          <th>Shark's</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Started</td>
+          <td>1950</td>
+          <td>1969</td>
+          <td>Chicago chain by the early 2000s</td>
+        </tr>
+        <tr>
+          <td>Tied to</td>
+          <td>South Side</td>
+          <td>West Side, including Austin</td>
+          <td>South Side, West Side, and suburbs</td>
+        </tr>
+        <tr>
+          <td>First order</td>
+          <td>Mixed half chicken, fries, white bread, mild sauce</td>
+          <td>Wings, fries, and mild sauce</td>
+          <td>Lemon-pepper wings or a fish dinner</td>
+        </tr>
+        <tr>
+          <td>Sauce</td>
+          <td>Mild or hot, on the chicken</td>
+          <td>House mild sauce</td>
+          <td>Lemon pepper more than mild sauce</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <section class="panel">
+      <h2>Help me choose</h2>
+      <p>Answer three questions. The result stays on this page and is not saved.</p>
+      <form id="quiz">
+        <fieldset>
+          <legend>What do you want on the chicken?</legend>
+          <label><input type="radio" name="sauce" value="mild" required> Mild sauce</label>
+          <label><input type="radio" name="sauce" value="lemon"> Lemon pepper</label>
+          <label><input type="radio" name="sauce" value="either"> Either one</label>
+        </fieldset>
+        <fieldset>
+          <legend>What sounds like the right first order?</legend>
+          <label><input type="radio" name="food" value="half" required> Half chicken, fries, and white bread</label>
+          <label><input type="radio" name="food" value="wings"> Wings and mild sauce</label>
+          <label><input type="radio" name="food" value="fish"> Fish or lemon-pepper wings</label>
+        </fieldset>
+        <fieldset>
+          <legend>Which story interests you more?</legend>
+          <label><input type="radio" name="story" value="old" required> The oldest South Side shack</label>
+          <label><input type="radio" name="story" value="west"> A West Side family spot from 1969</label>
+          <label><input type="radio" name="story" value="new"> A newer fish-and-chicken chain</label>
+        </fieldset>
+        <button class="button" type="submit">Show my match</button>
+        <p id="quiz-result" class="result" hidden></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Best Chicken in Chicago. Informational site by Vernon Beasley, CIS 181.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+:root {
+  --ink: #1c140f;
+  --cream: #f7f1e8;
+  --paper: #fffaf3;
+  --red: #9d2c2c;
+  --gold: #e4b15a;
+  --line: #e4d8c8;
+  --muted: #5c5148;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--ink);
+  background: var(--cream);
+  line-height: 1.55;
+}
+
+button,
+[role="button"] { cursor: pointer; }
+
+.site-header {
+  background: var(--ink);
+  color: var(--cream);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 14px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.brand {
+  color: inherit;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 1.05rem;
+}
+
+.brand span {
+  display: block;
+  color: var(--gold);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  color: var(--cream);
+  border: 1px solid var(--gold);
+  padding: 8px 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.site-nav a {
+  color: var(--cream);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+}
+
+.site-nav a.active,
+.site-nav a:hover { color: var(--gold); }
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 28px 18px 56px;
+}
+
+.hero h1,
+.page-title {
+  font-size: 2.4rem;
+  line-height: 1.1;
+  margin: 0 0 12px;
+}
+
+.lead { font-size: 1.15rem; max-width: 42rem; }
+
+.actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 8px; }
+
+.button,
+button.button {
+  display: inline-block;
+  background: var(--red);
+  color: white;
+  text-decoration: none;
+  border: 0;
+  padding: 10px 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.button.dark { background: var(--ink); }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.card,
+.panel {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--red);
+  padding: 16px 16px 18px;
+}
+
+.card h2,
+.panel h2 { margin: 0 0 8px; font-size: 1.45rem; }
+
+.kicker {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  color: var(--red);
+  margin: 0 0 6px;
+}
+
+.muted { color: var(--muted); }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--paper);
+  margin: 12px 0 24px;
+}
+
+th,
+td {
+  border: 1px solid var(--line);
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: var(--ink);
+  color: var(--cream);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+  border: 1px solid var(--line);
+  background: var(--paper);
+  margin: 0 0 14px;
+  padding: 12px 14px;
+}
+
+legend {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  padding: 0 6px;
+}
+
+label { display: block; margin: 6px 0; }
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  max-width: 34rem;
+  padding: 10px;
+  font: inherit;
+  border: 1px solid var(--line);
+  background: white;
+}
+
+textarea { min-height: 120px; }
+
+.error {
+  color: var(--red);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.result {
+  background: #fff4d6;
+  border-left: 4px solid var(--gold);
+  padding: 12px 14px;
+}
+
+.site-footer {
+  background: var(--ink);
+  color: var(--cream);
+  text-align: center;
+  padding: 18px 12px 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+
+.site-footer a { color: var(--gold); }
+
+@media (max-width: 760px) {
+  .menu-toggle { display: inline-block; }
+
+  .site-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 8px;
+  }
+
+  .site-nav.open { display: flex; }
+
+  .cards { grid-template-columns: 1fr; }
+
+  .hero h1,
+  .page-title { font-size: 1.9rem; }
+
+  table { font-size: 0.95rem; }
+}
