@@ -1,34 +1,114 @@
-/* ==========================================
-   Lab 1-4: CSS Foundations (Do not Modify)
-   ========================================== */
-body {
-    background-color: #FCFCFC;
-    color: #4A4A4A;
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-h1,
-h2 {
-    font-family: Georgia, "Times New Roman", serif;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Explorer Survey</title>
+</head>
+    <title>Earth Explorer Survey</title>
+    <link rel="stylesheet" href="styles..css">
+</head>
 
-h1 {
-    color: #1A1A1A;
-    font-size: 52px;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 2px #D5D5D5;
-}
+<body> 
 
-h2 {
-    color: #0097A7;
-    font-size: 28px;
-}
+   <h1>Earth Explorer Survey</h1>
+   
 
-img {
-    width: 380px;
-    border: 2px solid #0097A7;
-    margin: 20px 0;
-}
+   <p>Earth is home to seven unique continents, each offering amazing landscapes, 
+    diverse wildlife, rich cultures, and unforgettable travel experiences. From
+    tropical rainforests and snowy mountains to historic landmarks and beautiful
+    coastlines, every continent has something special to explore.</p>
+
+    <p>Learn more about the world's continents, then complete the survey to share
+    your travel interests and dream destinations.</p>
+
+    <!-- Create the continent table here -->
+    <table>
+        <tr>
+            <th>Continent</th>
+            <th>What Can You Explore?</th>
+        </tr>
+        <tr>
+            <td>Africa</td>
+            <td>Wildlife, deserts, and exciting safari adventures</td>
+        </tr>
+        <tr>
+            <td>Antarctica</td>
+            <td>Glaciers, Penguins, and breathtaking icy landscapes</td>
+        </tr>
+        <tr>
+            <td>Asia</td>
+            <td>Mountains, rainforests, ancient temples, and vibrant cultures</td>
+        </tr>
+        <tr>
+        
+            <td>Europe</td>
+            <td>Historic cities, castles, musemums and secenic countryside</td>
+        </tr>
+        <tr>
+            <td>North America</td>
+            <td>National parks, forests, canyons and beautiful lakes</td>
+        </tr>
+        <tr>
+            <td>Australia</td>
+            <td>Coral reefs, beaches, unique wildlife, and the Outback</td>
+        </tr>
+        <tr>    
+            <td>South America</td>
+            <td>Amazon rainforest, Andes mountains, and spectacular waterfalls</td>
+
+        </tr>
+             <td></td>
+        </tr>
+    </table>
+            <td>Diverse climates and cultures spanning Europe and Asia</td>
+    
+    <h2>Share Your Travel Interests</h2>
+    <!-- Removed incomplete text -->
+
+    <p>Tell us about the places you would most like to visit by completing the survey below.</p>
+  
+    <form method="post" action="https://httpbin.org/post">
+
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name">
+
+  <label for="email">Email Address</label>
+  <input type="text" id="email" name="email">
+
+  <label for="continent">Which continent would you most like to explore?</label>
+  <select id="continent" name="continent">
+    <option value="Africa">Africa</option>
+    <option value="Antarctica">Antarctica</option>
+    <option value="Asia">Asia</option>
+    <option value="Europe">Europe</option>
+    <option value="North America">North America</option>
+    <option value="Australia">Australia</option>
+    <option value="South America">South America</option>
+  </select>
+
+  <p>What interests you the most?</p>
+
+  <label for="nature">Nature</label>
+  <input type="radio" id="nature" name="interest" value="nature">
+
+  <label for="wildlife">Wildlife</label>
+  <input type="radio" id="wildlife" name="interest" value="wildlife">
+
+  <label for="history">History &amp; Culture</label>
+  <input type="radio" id="history" name="interest" value="history">
+
+  <label for="comments">Tell us what you would like to discover.</label>
+  <textarea id="comments" name="comments" cols="30" rows="4"></textarea>
+
+  <label for="updates">Email me about new destinations and travel ideas</label>
+  <input type="checkbox" id="updates" name="updates" checked>
+
+  <input type="submit" value="Submit Survey">
+
+</form>
+    <!-- Create the survey form here -->
+
+</body>
+
+</html>
