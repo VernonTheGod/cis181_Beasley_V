@@ -7,16 +7,20 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- TODO 1: Add a link to #main here, with class="skip-link" and the text "Skip to main content". -->
+    <a class="skip-link" href="#main">Skip to main content</a>
     <header class="page-header">
       <div class="container">
         <h1>Thai Terrace</h1>
-        <!-- TODO 2: Add nav with aria-label="Primary". Inside it, add a ul with three li elements and Home, Menu, and Visit links. Use index.html, pages/menu.html, and pages/visit.html, respectively. -->
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/menu.html">Menu</a></li>
+          <li><a href="pages/visit.html">Visit</a></li>
+        </ul>
         <!-- TODO 3: In the navigation you just added, put aria-current="page" on the Home link only. -->
       </div>
     </header>
     <!-- TODO 4: Add id="main" to the main element as the skip-link destination. -->
-    <main>
+    <main id="main">
       <section class="hero">
         <div class="container hero-copy">
           <p>Thai flavors. A welcoming table.</p>
