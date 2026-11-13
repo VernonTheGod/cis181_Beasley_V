@@ -242,6 +242,8 @@ h1, h2, h3 {
 .container {
   width: 92%;
   max-width: 60rem;
+  margin: 
+  0 auto;
 }
 
 /* TODO 2: Media limits — img, iframe (completed)

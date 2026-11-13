@@ -240,7 +240,12 @@ h1, h2, h3 {
    Before: .container { width: 960px; margin: 0 auto; }
    Now: width: 92%; max-width: 60rem;
    Keep: margin: 0 auto still centers the container. */
-
+.container {
+  width: 92%;
+  max-width: 60rem;
+  margin: 0;
+}
+   
 /* TODO 2: Media limits — img, iframe
    Add a rule with max-width: 100%;
 
@@ -250,26 +255,43 @@ h1, h2, h3 {
 
 /* TODO 3: Flexible photos — .hall-photo, .dish-photo
    Add a rule with width: 100%; height: auto;
+img, iframe {
+  max-width: 100%;
+ ;
+
+
 
    Before: .hall-photo { width: 100%; height: 500px; }
    Before: .dish-photo { width: 464px; height: 290px; }
    Now, both: width: 100%; height: auto;
    The image files supply their original proportions. */
-
+.hall-photo, .dish-photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16-9;
+}
 /* TODO 4: Map frame — iframe
    Add a rule with width: 100%; height: auto; aspect-ratio: 16 / 9;
-
    Before in HTML: <iframe width="960" height="350" ...>
    Now in CSS: width: 100%; height: auto; aspect-ratio: 16 / 9;
    height: auto replaces the fixed 350px height.
    16 / 9 is a chosen frame ratio, not the original 960 / 350. */
+   
+   iframe {
+  width: 100%;  
+  height: auto;
+  aspect-ratio: 16 / 9;
+   }
 
 /* TODO 5: Featured grid — .featured-row
    Add a rule with grid-template-columns: 1fr;
-
    Before: .featured-row { display: grid; grid-template-columns: 464px 464px; gap: 32px; }
    Now: grid-template-columns: 1fr;
    Keep: display: grid and gap: 32px; one column replaces two. */
+
+.featured-row {
+  grid-template-columns: 1fr;
+  }
 
 /* TODO 6: Featured card width — .featured-dish
    Add a rule with width: auto;
@@ -277,6 +299,9 @@ h1, h2, h3 {
    Before: .featured-dish { width: 464px; }
    Now: width: auto; lets the card fill its grid column. */
 
+   .featured-dish {
+  width: auto;
+  }
 /* TODO 7: Menu columns — .dish-grid
    Add a rule with grid-template-columns: 1fr;
 
@@ -284,13 +309,19 @@ h1, h2, h3 {
    Now: grid-template-columns: 1fr;
    Keep: display: grid and gap: 16px. Check pages/menu.html. */
 
+   .dish-grid {
+  grid-template-columns: 1fr;
+  }
 /* TODO 8: Menu card wrapping — .menu-item
    Add a rule with flex-wrap: wrap;
+
 
    Before: .menu-item already uses display: flex; its default is flex-wrap: nowrap.
    New: flex-wrap: wrap; lets the direct children move to another line.
    Keep: display: flex; text and thumbnail are the flex items. */
-
+.menu-item {
+  flex-wrap: wrap;
+  } 
 /* TODO 9: Menu text space — .dish-copy
    Add a rule with flex-basis: 12rem;
 
