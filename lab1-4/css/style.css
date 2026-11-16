@@ -3,20 +3,14 @@
    ========================================== */
 body {
     background-color: #FCFCFC;
-}
-body {
     color: #4A4A4A;
-}
-;
-body {
     font-size: 15px;
     font-family: Verdana, Arial, sans-serif;
-}
-
-body {
     line-height: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
-h1, h2, new3 {
+h1, h2, h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 } 
 h1 {
@@ -33,9 +27,9 @@ h2 {
 }
 
 img {
-    margin: 20px auto 0px;
-
-    border: 2px solid #0097A7;
-    max-width: 380px;
+    width: 380px;
     height: auto;
+    margin: 20px auto 0px;
+    border: 2px solid #0097A7;
+    display: block;
 }
