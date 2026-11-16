@@ -105,8 +105,8 @@ body {
 }
 
 .page-wrapper {
-    width: 1105px;
-    max-width: 100%;
+    width: 86.33%;              /* 1105 ÷ 1280 = 0.863281 → 86.33% */
+    max-width: 1105px;          /* keep max-width so it doesn’t get too wide */
     margin: 0 auto;
     padding: 1em 2em;
 }
@@ -161,3 +161,37 @@ nav a:focus { background: #c85a17; color: #ffffff; }
 .wrapper { width: 100%; }
 .sidebar h3 { margin: 0 0 0.5em; padding-bottom: 0.35em; border-bottom: 2px solid #2e8b57; font-size: 1.33em;          /* 20px ÷ 15px = 1.333 → 1.33em */ text-transform: uppercase; }
 .sidebar li { padding: 0.5em 0; border-bottom: 1px solid #b7d6c2; }
+
+/* ==========================================
+   Lab 2-5: Responsive Media Query
+   ========================================== */
+@media screen and (max-width: 768px) {
+    .content,
+    .sidebar {
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: 1em 0;
+    }
+
+    .page-wrapper {
+        width: 100%;
+        padding: 1em;
+    }
+
+    nav li {
+        display: block;
+        margin: 0.3em 0;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+    }
+
+    #earth-image {
+        float: none;
+        margin: 1em auto;
+        display: block;
+    }
+}
